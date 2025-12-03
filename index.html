@@ -16,17 +16,43 @@
       <div class='welcome'>Hello There!</div>
       <div class='subtitle'>We're almost done. Before using our services you need to create an account.</div>
       <div class='input-fields'>
-        <input type='text' placeholder='Username' class='input-line full-width'></input>
-        <input type='email' placeholder='Email' class='input-line full-width'></input>
-        <input type='password' placeholder='Password' class='input-line full-width'></input>
 
+        <select id="user">
+        <input type='text' placeholder='Username' class='input-line full-width'></input>
+        </select>
+
+        <select id="email">
+        <input type='email' placeholder='Email' class='input-line full-width'></input>
+        </select>
+
+        <select id="password">
+        <input type='password' placeholder='Password' class='input-line full-width'></input>
+        </select>
+        
+        <select id="dob">
+        <input type='dob' placeholder='DOB' class='input-line full-width'></input>
+      </select>
+      
+        <label>Favorite Color:</label>
+    <select id="colorInput">
+    <option>Red</option>
+    <option>Blue</option>
+    <option>Green</option>
+    <option>Purple</option>
+  </select><br><br>
+
+    <label>Favorite Pet:</label><br>
+    <input type="radio" name="pet" value="Dog">Dog<br>
+    <input type="radio" name="pet" value="Cat">Cat<br>
+    <input type="radio" name="pet" value="Fish">Fish<br><br>
+      
       </div>
-      e
+      
       <div><button class='ghost-round full-width'>Create Account</button></div>
     </div>
   </div>
 </div>
-   
+
 </body>
 <script src="java.js"></script>
 </html>
