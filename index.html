@@ -8,52 +8,49 @@
 </head>
 <body>
 
-    <div class='bold-line'></div>
+<div class='bold-line'></div>
 <div class='container'>
   <div class='window'>
     <div class='overlay'></div>
     <div class='content'>
       <div class='welcome'>Hello There!</div>
       <div class='subtitle'>We're almost done. Before using our services you need to create an account.</div>
+
       <div class='input-fields'>
-
-        <select id="username">
-        <input type='text' placeholder='Username' class='input-line full-width'></input>
-        </select>
-
-        <select id="email">
-        <input type='email' placeholder='Email' class='input-line full-width'></input>
-        </select>
-
-        <select id="password">
-        <input type='password' placeholder='Password' class='input-line full-width'></input>
-        </select>
         
-        <select id="dob">
-        <input type='dob' placeholder='DOB' class='input-line full-width'></input>
-      </select>
-      
-        <label>Favorite Color:</label>
-    <select id="colorInput">
-    <option>Red</option>
-    <option>Blue</option>
-    <option>Green</option>
-    <option>Purple</option>
-  </select><br><br></select>
+        <input type='text' placeholder='Username' class='input-line full-width'>
+        <input type='email' placeholder='Email' class='input-line full-width'>
+        <input type='password' placeholder='Password' class='input-line full-width'>
+        <input type='text' placeholder='DOB' class='input-line full-width'>
 
-    <label>Favorite Pet:</label><br>
-    <select id="petRadios">
-    <input type="radio" name="pet" value="Dog">Dog<br>
-    <input type="radio" name="pet" value="Cat">Cat<br>
-    <input type="radio" name="pet" value="Fish">Fish<br><br>
-    </select>
+        <label>Favorite Color:</label>
+        <select id="colorInput">
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Purple</option>
+        </select>
+
+        <br><br>
+
+        <label>Favorite Pet:</label><br>
+        <input type="radio" name="pet" value="Dog"> Dog<br>
+        <input type="radio" name="pet" value="Cat"> Cat<br>
+        <input type="radio" name="pet" value="Fish"> Fish<br><br>
+
       </div>
-      
-      <div><button class='ghost-round full-width'>Create Account</button></div>
+
+      <div>
+        <button id="submitBtn" class='ghost-round full-width'>Create Account</button>
+      </div>
+
+      <br>
+      <div id="output" style="color:white; font-size: 16px;"></div>
+
     </div>
   </div>
 </div>
 
-</body>
 <script src="java.js"></script>
+</body>
 </html>
