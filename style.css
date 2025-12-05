@@ -182,9 +182,9 @@ button:focus {
   background: linear-gradient(#8CA6DB, #B993D6);
   opacity: 0.85;
   filter: alpha(opacity=85);
-  height: 755px;
+  height: 770px;
   position: absolute;
-  width: 360px;
+  width: 340px;
   z-index: 1;
 }
 
