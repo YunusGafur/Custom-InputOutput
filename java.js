@@ -5,24 +5,25 @@ const dob = document.querySelector("input[placeholder='DOB']");
 const colorInput = document.getElementById("colorInput");
 const petRadios = document.querySelectorAll("input[name='pet']");
 
+const submitBtn = document.getElementById("submitBtn");
+const output = document.getElementById("output");
+
 function getPet() {
-    let chosenPet = "";
+    let pet = "";
     petRadios.forEach(radio => {
         if (radio.checked) {
-            chosenPet = radio.value;
+            pet = radio.value;
         }
     });
-    return chosenPet;
+    return pet;
 }
 
 submitBtn.addEventListener("click", function () {
-    const userValue = username.value;
-    const emailValue = email.value;
-    const passValue = password.value;
-    const dobValue = dob.value;
-    const colorValue = colorInput.value;
-    const petValue = getPet();
-
-    output.innerHTML = 'Username: ' + userValue + 'Email: ' + emailValue + 'Password: ' + passValue + 'DOB: ' + dobValue + 'Favorite Color: ' + colorValue + 'Favorite Pet: ' + petValue;
-
+    output.innerHTML =
+        "Username: " + username.value + "<br>" +
+        "Email: " + email.value + "<br>" +
+        "Password: " + password.value + "<br>" +
+        "DOB: " + dob.value + "<br>" +
+        "Favorite Color: " + colorInput.value + "<br>" +
+        "Favorite Pet: " + getPet();
 });
