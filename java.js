@@ -20,9 +20,9 @@ function getPet() {
 
 submitBtn.addEventListener("click", function () {
     output.innerHTML =
+        "Success! " + password.value + "<h2> " +
         "Username: " + username.value + "<br> " +
         "Email: " + email.value + "<br> " +
-        "Password: " + password.value + "<br> " +
         "DOB: " + dob.value + "<br> " +
         "Favorite Color: " + colorInput.value + "<br> " +
         "Favorite Pet: " + getPet();
