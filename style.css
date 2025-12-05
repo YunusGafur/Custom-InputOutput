@@ -184,7 +184,7 @@ button:focus {
   filter: alpha(opacity=85);
   height: 770px;
   position: absolute;
-  width: 340px;
+  width: 360px;
   z-index: 1;
 }
 
